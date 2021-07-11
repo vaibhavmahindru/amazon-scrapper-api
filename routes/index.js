@@ -9,7 +9,7 @@ const amazonUrl = `https://www.amazon.in/`
 const generateUrl = (apiKey) => `http://api.scraperapi.com?api_key=${apiKey}&autoparse=true`
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'index page' });
+  res.render('index', { title: 'Amazon Data Scrapper' });
 });
 router.get('/products/:productId', async function(req, res, next) {
   const {productId} = req.params;
